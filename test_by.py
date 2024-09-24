@@ -1,7 +1,7 @@
 import pytest
 from tinygrad import Tensor
 
-from nn import Linear, Embedding, GeLU, RMSNorm, Sequential, PI
+from by import Linear, Embedding, GeLU, RMSNorm, Sequential, PI
 
 @pytest.fixture
 def setup_linear():
