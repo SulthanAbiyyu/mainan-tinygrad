@@ -44,3 +44,7 @@ class Sequential:
         for m in self.modules:
             x = m(x)
         return x
+
+class Softmax:
+    def __call__(self, x):
+        return x.exp() / x.exp().sum(-1, keepdim=True)
